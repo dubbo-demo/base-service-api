@@ -1,4 +1,4 @@
-package com.way.base;
+package com.way.common;
 
 /**
  * 功能描述：
