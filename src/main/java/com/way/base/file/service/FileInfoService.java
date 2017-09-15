@@ -28,4 +28,11 @@ public interface FileInfoService {
      * @param dto
      */
     void updateFileInfo(FileInfoDto dto);
+
+    /**
+     * 根据图片ID下载图片信息
+     * @param fileId
+     * @return
+     */
+    FileInfoDto getFileInfoByFileId(String fileId);
 }
