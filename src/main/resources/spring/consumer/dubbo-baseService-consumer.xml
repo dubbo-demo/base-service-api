@@ -12,4 +12,6 @@
 
     <dubbo:reference interface="com.way.base.versionUpdate.service.VersionUpdateService" id="versionUpdateService"/>
 
+    <dubbo:reference interface="com.way.base.beeCloud.service.BeeCloudMessageDetailService" id="beeCloudMessageDetailService"/>
+
 </beans>
