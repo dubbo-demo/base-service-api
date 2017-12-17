@@ -47,4 +47,5 @@ public class BeeCloudMessageDetailDto extends BaseEntity {
     private String time_end;
     private String is_subscribe;
     private String return_code;
+    private Integer flag; // 系统充值成功标志 1：成功，2：失败
 }
