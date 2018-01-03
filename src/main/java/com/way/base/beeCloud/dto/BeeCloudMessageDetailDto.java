@@ -1,17 +1,17 @@
 package com.way.base.beeCloud.dto;
 
-import com.way.common.bean.BaseEntity;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.ToString;
+
+import java.io.Serializable;
+import java.util.Date;
 
 /**
  * BeeCloud回调信息Dto
  */
 @Data
 @ToString
-@EqualsAndHashCode
-public class BeeCloudMessageDetailDto extends BaseEntity {
+public class BeeCloudMessageDetailDto implements Serializable {
 
     /**
      "transaction_id":"1006410636201505250163820565",
@@ -48,4 +48,14 @@ public class BeeCloudMessageDetailDto extends BaseEntity {
     private String is_subscribe;
     private String return_code;
     private Integer flag; // 系统充值成功标志 1：成功，2：失败
+
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+
+    /**
+     * 修改时间
+     */
+    private Date modifyTime;
 }

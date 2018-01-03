@@ -1,17 +1,16 @@
 package com.way.base.beeCloud.dto;
 
-import com.way.common.bean.BaseEntity;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.ToString;
+
+import java.io.Serializable;
 
 /**
  * BeeCloud基础DTO
  */
 @Data
 @ToString(callSuper = true)
-@EqualsAndHashCode(callSuper = true)
-public class BeeCloudDto<T> extends BaseEntity {
+public class BeeCloudDto<T> implements Serializable {
 
     private static final long serialVersionUID = -6888114224015100028L;
 
