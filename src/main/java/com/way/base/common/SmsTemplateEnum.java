@@ -7,7 +7,10 @@ package com.way.base.common;
 public enum SmsTemplateEnum {
 	
 	LOGIN_TEMPLATE("login-sms-code","登录短信模板"),
-	APP_REGIST_TEMPLATE("app-regist-code","APP注册短信验证码模板");
+	APP_REGIST_TEMPLATE("SMS_120406465","APP注册短信验证码模板"),
+	APP_RESETPASSWORD_TEMPLATE("SMS_120366455","APP重置密码短信验证码模板"),
+	APP_TRANSFER_REWARDSCORE_TEMPLATE("SMS_120366456","APP积分转赠短信验证码模板"),
+	APP_WITHDRAWAL_REWARDSCORE_TEMPLATE("SMS_120376521","APP积分提现短信验证码模板");
 
 	private String code;//模板编号
 	
