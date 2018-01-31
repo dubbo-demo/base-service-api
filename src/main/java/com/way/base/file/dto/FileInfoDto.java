@@ -25,7 +25,7 @@ public class FileInfoDto extends BaseInfo {
 
     private Long id;
 
-    private String phoneNo;// 手机号
+    private String invitationCode;// 邀请码
 
     private String fileName;// 文件名
 

@@ -12,10 +12,10 @@ public interface FileInfoService {
 
     /**
      * 根据手机号查出用户头像是否存在
-     * @param phoneNo
+     * @param invitationCode
      * @return
      */
-    FileInfoDto getFileInfoByPhoneNo(String phoneNo);
+    FileInfoDto getFileInfoByInvitationCode(String invitationCode);
 
     /**
      * 保存用户头像信息
