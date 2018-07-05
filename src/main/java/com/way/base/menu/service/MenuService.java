@@ -45,29 +45,23 @@ public interface MenuService {
     public ServiceResult<String> delete(Long id);
 
     /**
-     * 
+     * 添加编辑菜单
      * @param menu
      * @return
-     * @Description:添加编辑菜单
      */
     public ServiceResult<String> edit(MenuDto menu);
 
     /**
-     * 
+     * 根据menuIds获取菜单
+     * @param ids
      * @return
-     * @Description:根据menuIds获取菜单
      */
     public ServiceResult<List<MenuDto>> getMenuListByIds(List<Long> ids);
 
     /**
-     * 
-     * @名称 isMenuExist
-     * @描述  判断菜单名称是否存在
-     * @返回类型 boolean
-     * @日期 2016年9月6日 下午3:24:28
-     * @创建人 王海波
-     * @更新人 王海波
-     *
+     * 判断菜单名称是否存在
+     * @param menuName
+     * @return
      */
     boolean isMenuExist(String menuName);
 }
